@@ -35,6 +35,9 @@ $ npm install
 ## Running the app
 
 ```bash
+# Start the pm2 underground process
+$ npm run start:dev-ignition
+
 # development
 $ npm run start
 
@@ -56,6 +59,24 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+Note:
+Before running on any environment you have to install pm2 globally and set the **environment variables**:
+
+```dotenv
+PORT=
+LOCAL_DB_USER=
+LOCAL_DB_HOST=
+LOCAL_DB_URL=
+LOCAL_DB_PASSWORD=
+LOCAL_DB_PORT=
+
+STAGING_DB_USER=
+STAGING_DB_HOST=
+STAGING_DB_URL=
+STAGING_DB_PASSWORD=
+STAGING_DB_PORT=
 ```
 
 ## Support
