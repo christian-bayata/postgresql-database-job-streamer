@@ -45,7 +45,7 @@ export class JobService {
         /* Move data from staging to local collection in streams */
         const stream = stagingDbClient.query(theStagingQuery).stream();
 
-        stream.on('data', async (doc) => {
+        stream.on('data', async (row) => {
           await localDbClient.query(theLocalQuery);
         });
 
